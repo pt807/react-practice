@@ -1,0 +1,11 @@
+{
+  "name": "ex04",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dev-server"
+  },
+  "author": "",
+  "license": "ISC"
+}
