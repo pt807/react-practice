@@ -9,4 +9,14 @@ ex04: 애플리케이션 번들링(bundling)
     3) test(Mocha, jest) 작업
     4) 난독화/압축(uglify) 작업
     5) 번들링
-5. 
+5. js 모듈뿐만 아니라 다양한 에셋(image, css, sass/scss, font)들도 모듈로 취급한다.
+6. 설치
+    $ npm i -D webpack webpack-cli webpack-dev-server style-loader css-loader sass-loader node-sass
+7. 설치 확인
+    $ npx webpack --version
+8. webpack 설정(webpack.config.js)
+9. 스크립팅(package.json)
+10. 애플리케이션 실행(테스트 서버 실행)
+    $ npm start
+11. 애플리케이션 빌드
+    $ npm run build
