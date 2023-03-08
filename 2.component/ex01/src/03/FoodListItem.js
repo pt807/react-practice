@@ -1,6 +1,6 @@
 import React from "react";
 
-function FoodListItem({name, count}) {
+function FoodListItem({ name, count }) {
   return (
     <li>
       {name}: {count}

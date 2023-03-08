@@ -7,8 +7,9 @@ ex01: Property(props)
 4) 부모가 소유한 데이터
 
 src/01: FoodList: 함수 컨포넌트
-src/01: FoodList: Data Flow(Top -> Down): 함수 컨포넌트
-src/01: FoodList: Data Flow(Top -> Down): 클래스 컨포넌트
+src/02: FoodList: Data Flow(Top -> Down): 함수 컨포넌트
+src/03: FoodList: Data Flow(Top -> Down): 클래스 컨포넌트
+src/04: Property Validation
 
 1. 설치
     1) 개발툴
