@@ -1,7 +1,7 @@
 {
-  "name": "ex02",
+  "name": "ex04",
   "version": "1.0.0",
-  "description": "",
+  "description": "Babel CLI\r     1) 설치\r         $ npm i -D @babel/core @babel/cli\r     2)  $ npx babel src -d dist",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
