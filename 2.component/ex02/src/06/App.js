@@ -1,7 +1,7 @@
 import React from "react";
-import styles from "./assets/scss/App.scss";
+import "./assets/scss/App.scss";
 import styled from "styled-components";
-import Content from "./Content.js";
+import Content from "./Content";
 
 const StyledH1 = styled.h1`
   width: 180px;
@@ -17,10 +17,10 @@ const StyledDiv = styled.div`
   text-align: center;
 `;
 
-// const StyledContent = styled.p`
-//   color: #f00;
-//   font-size: 20px;
-//   font-weight: bold;
+// const Content = styled.p`
+//     color: #f00;
+//     fotn-size: 20px;
+//     font-weight: bold;
 // `;
 
 function App(props) {
