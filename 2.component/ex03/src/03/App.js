@@ -28,6 +28,7 @@ export default function App() {
           type="text"
           name="message"
           placeholder="메세지를 입력 하세요"
+          // value={""} 지정하면 제어 컴포넌트
           onChange={onChangeMessageInput}
         />
         <br />
