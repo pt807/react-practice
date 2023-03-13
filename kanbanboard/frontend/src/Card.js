@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import styles from "./assets/scss/Card.scss";
 import TaskList from "./TaskList";
 
-const Card = ({ no, title, description, tasks }) => {
+const Card = ({ no, title, description, tasks, callback }) => {
   const [showDetail, setShowDetail] = useState(false);
+
   return (
     <div className={styles.Card}>
       <div
@@ -12,18 +13,16 @@ const Card = ({ no, title, description, tasks }) => {
             ? [styles.Card__Title, styles.Card__Title__open].join(" ")
             : styles.Card__Title
         }
-        onClick={(e) => {
-          setShowDetail(!showDetail);
-        }}
+        onClick={(e) => setShowDetail(!showDetail)}
       >
         {title}
       </div>
-      {showDetail ? 
+      {showDetail ? (
         <div className={styles.Card__Details}>
           {description}
-          <TaskList tasks={tasks} />
+          <TaskList cardNo={no} tasks={tasks} callback={callback} />
         </div>
-       : null}
+      ) : null}
     </div>
   );
 };
