@@ -9,14 +9,19 @@ const App = () => {
   const [emails, setEmails] = useState(data);
   const notifyKeyWordChange = function (keyword) {
     // keyword가 firstName or lastName or email
-    const newEmails = emails.filter((e) => {
-      return true;
+    const newEmails = data.filter((e) => {
+      return (
+        e.firstName.indexOf(keyword) !== -1 ||
+        e.lastName.indexOf(keyword) !== -1 ||
+        e.email.indexOf(keyword) !== -1
+      );
     });
+    setEmails(newEmails);
   };
   return (
     <div id="App" className={"App"}>
       <RegisterForm />
-      <Searchbar />
+      <Searchbar callback={notifyKeyWordChange} />
       <Emaillist emails={emails} />
     </div>
   );
