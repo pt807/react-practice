@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 
 export default class extends Component {
-    constructor() {
-        super(...arguments);
+    constructor(props) {
+        super(props);
         this.state = {
-            step: this.props.step,
-            val: this.props.begin
+            val: this.props.begin,
+            step: this.props.step
         }
     }
 
