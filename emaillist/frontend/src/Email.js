@@ -1,14 +1,14 @@
 import React from "react";
 import "./assets/css/Emaillist.css";
 
-const Email = ({ no, firstName, lastName, email }) => {
+const Email = ({ no, firstName, lastName, email, callbackdeleteEmail }) => {
   return (
     <li>
       {firstName}
       {lastName}
       <br />
       {email}
-      <a href=""/>
+      <a href="#" onClick={() => callbackdeleteEmail(no)} />
     </li>
   );
 };
