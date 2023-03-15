@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Task from "./Task";
 import styles from "./assets/css/TaskList.css";
 
-const TaskList = ({ cardNo, tasks, callbackAddTask }) => {
+const TaskList = ({ tasks, callbackAddTask, callbackChangeTaskDone }) => {
   return (
     <div>
       <ul>
@@ -10,9 +10,9 @@ const TaskList = ({ cardNo, tasks, callbackAddTask }) => {
           <Task
             key={task.no}
             no={task.no}
-            cardNo={cardNo}
             name={task.name}
             done={task.done}
+            callbackChangeTaskDone={callbackChangeTaskDone}
           />
         ))}
       </ul>
