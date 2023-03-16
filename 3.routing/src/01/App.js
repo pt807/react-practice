@@ -4,30 +4,30 @@ import Gallery from "./component/Gallery";
 import Guestbook from "./component/Guestbook";
 
 export default function App() {
-  const [route, setRoute] = useState("/");
+    const [route, setRoute] = useState("/");
 
-  useEffect(() => {
-    window.addEventListener("hashchange", handlerHashChange);
-    return () => {
-      window.removeEventListener("hashchange", handlerHashChange);
+    useEffect(() => {
+        window.addEventListener("hashchange", handlerHashChange);
+        return () => {
+            window.removeEventListener("hashchange", handlerHashChange);
+        };
+    }, []);
+
+    const handlerHashChange = function () {
+        console.log(window.location.hash);
+        setRoute(window.location.hash.substring(1));
     };
-  }, []);
 
-  const handlerHashChange = function () {
-    console.log(window.location.hash);
-    setRoute(window.location.hash.substring(1));
-  };
-
-  return (() => {
-    switch (route) {
-      case "/":
-        return <Main />;
-      case "/guestbook":
-        return <Guestbook />;
-      case "/gallery":
-        return <Gallery />;
-      default:
-        return null;
-    }
-  })();
+    return (() => {
+        switch (route) {
+            case "/":
+                return <Main />;
+            case "/guestbook":
+                return <Guestbook />;
+            case "/gallery":
+                return <Gallery />;
+            default:
+                return null;
+        }
+    })();
 }
