@@ -3,7 +3,6 @@ import Task from "./Task";
 import styles from "./assets/css/TaskList.css";
 
 const TaskList = ({ tasks, callbackAddTask, callbackChangeTaskDone }) => {
-  // gggg
   return (
     <div>
       <ul>
