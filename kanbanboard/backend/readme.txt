@@ -8,6 +8,14 @@
 		테스트
 		# java -Dspring.profiles.active=production -jar kanbanboard/backend/target/kanbanboard.jar 
 
+2. ssh 연결(ssh key 인증)
+	1) key 생성하기
+	
+	2) jenkins
+		- publish over SSH 플러그인 설치
+		- publish over SSH 플러그인 ssh server 등록
+		- 프로젝트의 빌드 후 조치(post-build action) 설정
+
 ===========================================================================
 	
 2. frontend
