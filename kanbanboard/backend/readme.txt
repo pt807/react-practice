@@ -24,6 +24,7 @@
       - ~/.ssh/environment
        ====================
        PATH=/opt/rh/devtoolset-11/root/usr/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/usr/local/douzone2023/java/bin:/usr/local/douzone2023/git/bin:/usr/local/douzone2023/maven3.8/bin:/usr/local/douzone2023/mariadb/bin:/usr/local/douzone2023/python/bin:/usr/local/douzone2023/node/bin
+
        ===================
        
       - /etc/ssh/sshd_config

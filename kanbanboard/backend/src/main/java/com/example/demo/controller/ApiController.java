@@ -35,6 +35,13 @@ public class ApiController {
 				.body(JsonResult.success(cardRepository.findAll()));
 	}
 	
+	@GetMapping("/hello")
+	public ResponseEntity<JsonResult> hello() {
+		return ResponseEntity
+				.status(HttpStatus.OK)
+				.body(JsonResult.success("hello~~~~"));
+	}
+	
 	@GetMapping("/task")
 	public ResponseEntity<JsonResult> readTask(Long cardNo) {
 		return ResponseEntity
