@@ -1,11 +1,13 @@
 const path = require("path");
 
+const CaseSensitivePathsPlugin = require("case-sensitive-paths-webpack-plugin");
+
 module.exports = function (env) {
   return {
     mode: "none",
     entry: path.resolve(`src/index.js`),
     output: {
-      path: path.resolve("public"),
+      path: path.resolve("../backend/src/main/resources"),
       filename: "assets/js/main.js",
       assetModuleFilename: "assets/images/[hash][ext]",
     },
@@ -38,6 +40,7 @@ module.exports = function (env) {
         },
       ],
     },
+    plugins: [new CaseSensitivePathsPlugin()],
     devtool: "eval-source-map",
     devServer: {
       host: "0.0.0.0",
